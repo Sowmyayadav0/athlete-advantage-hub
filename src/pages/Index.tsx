@@ -1,5 +1,5 @@
 
-import { Heart, Trophy, UserCircle, Calendar } from "lucide-react";
+import { Heart, Trophy, UserCircle, Calendar, FileText, Video } from "lucide-react";
 import StatCard from "@/components/dashboard/StatCard";
 import PerformanceChart from "@/components/dashboard/PerformanceChart";
 import UpcomingEvents from "@/components/dashboard/UpcomingEvents";
@@ -17,9 +17,16 @@ const Index = () => {
               Welcome back, track your performance and upcoming events
             </p>
           </div>
-          <button className="px-4 py-2 bg-sport-orange text-white rounded-lg hover:bg-sport-orange/90 transition-colors">
-            Add New Event
-          </button>
+          <div className="flex gap-4">
+            <button className="px-4 py-2 bg-sport-navy text-white rounded-lg hover:bg-sport-navy/90 transition-colors flex items-center gap-2">
+              <Video size={20} />
+              Start Meet
+            </button>
+            <button className="px-4 py-2 bg-sport-orange text-white rounded-lg hover:bg-sport-orange/90 transition-colors flex items-center gap-2">
+              <FileText size={20} />
+              View Documents
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
